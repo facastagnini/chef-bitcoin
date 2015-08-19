@@ -16,6 +16,7 @@ default['bitcoin']['binary']['checksum'] = 'c1fddf6921186c6da954a977995d45a140bc
 default['bitcoin']['binary']['service_wrapper'] = "bitcoind"
 default['bitcoin']['binary']['bitcoind'] = "bin/bitcoind"
 default['bitcoin']['source']['bitcoin-cli'] = node['bitcoin']['binary']['bitcoind']
+default['bitcoin']['source']['url'] = 'https://github.com/bitcoin/bitcoin'
 default['bitcoin']['binary']['nice_level'] = 10
 
 # 'package' recipe
