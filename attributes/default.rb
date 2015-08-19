@@ -16,7 +16,6 @@ default['bitcoin']['binary']['checksum'] = 'c1fddf6921186c6da954a977995d45a140bc
 default['bitcoin']['binary']['service_wrapper'] = "bitcoind"
 default['bitcoin']['binary']['bitcoind'] = "bin/bitcoind"
 default['bitcoin']['source']['bitcoin-cli'] = node['bitcoin']['binary']['bitcoind']
-default['bitcoin']['source']['url'] = 'https://github.com/bitcoin/bitcoin'
 default['bitcoin']['binary']['nice_level'] = 10
 
 # 'package' recipe
@@ -30,6 +29,7 @@ default['bitcoin']['package']['repo_checksum']['fedora'] = '11d6a2f28a3ae27ba040
 
 default['bitcoin']['source']['version'] = '0.10.1'
 default['bitcoin']['source']['checksum'] = '18a88785748588bb90764dc7f0aad5548da880d4d91f5803c7076cbcadb2959e'
+default['bitcoin']['source']['url'] = 'https://github.com/bitcoin/bitcoin'
 default['bitcoin']['source']['service_wrapper'] = "bitcoind"
 default['bitcoin']['source']['home'] = "/home/#{node['bitcoin']['user']}"
 default['bitcoin']['source']['prefix'] = "/usr/local"
